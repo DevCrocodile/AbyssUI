@@ -21,14 +21,14 @@ export interface ButtonProps {
     variant?: 'solid' | 'ghost',
     size?: "sm" | "md" | "lg"
     disabled?: boolean,
-    className: string,
+    className?: string,
     onClick?: () => void,
     color?: keyof typeof solidColors
 }
 
-export function Button({ children, variant = "solid", size = "lg", disabled = false, className, onClick, color = "teal" }: ButtonProps) {
+export function Button({ children, variant = "solid", size = "md", disabled = false, className, onClick, color = "white" }: ButtonProps) {
 
-    const baseStyles = "rounded-md font-medium transition-all duration-200 flex items-center shadow-md justify-center"
+    const baseStyles = "rounded-md font-medium transition-all duration-200 flex items-center shadow justify-center"
 
     const variantStyles = variant === 'solid' ? solidColors[color] : ghostColors[color]
 
