@@ -6,10 +6,15 @@ import dts from 'vite-plugin-dts'
 
 // https://vite.dev/config/
 export default defineConfig({
-  plugins: [react(), tailwindcss(), dts({ rollupTypes: true })],
+  plugins: [react(), tailwindcss(), dts({
+    insertTypesEntry: true,
+    rollupTypes: true,
+    include: ['lib/**/*.tsx', 'lib/**/*.ts'],
+    tsconfigPath: './tsconfig.app.json',
+  })],
   build: {
     lib: {
-      entry: resolve(__dirname, 'lib/main.js'),
+      entry: resolve(__dirname, 'lib/main.ts'),
       name: 'abyss-ui',
       fileName: 'abyss-ui'
     },
