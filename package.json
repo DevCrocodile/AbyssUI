@@ -1,6 +1,6 @@
 {
   "name": "abyss-ui",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "type": "module",
   "files": [
     "dist"
@@ -60,6 +60,8 @@
       "require": "./dist/abyss-ui.umd-js"
     }
   },
+  "./dist/style.css": "./dist/abyss-ui.css",
+  "sideEffects": false,
   "eslintConfig": {
     "extends": [
       "plugin:storybook/recommended"
