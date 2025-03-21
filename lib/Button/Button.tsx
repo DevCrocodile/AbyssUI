@@ -43,7 +43,7 @@ export function Button({ children, variant = "solid", size = "md", disabled = fa
         : "cursor-pointer"
 
     return (
-        <button className={twMerge(clsx(baseStyles, sizeStyles, disabledStyles, variantStyles), className)} disabled onClick={onClick}>
+        <button className={twMerge(clsx(baseStyles, sizeStyles, disabledStyles, variantStyles), className)} disabled={disabled} onClick={onClick}>
             {children}
         </button>
     )
