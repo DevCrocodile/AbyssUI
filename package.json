@@ -1,6 +1,6 @@
 {
   "name": "abyss-ui",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "type": "module",
   "types": "./dist/abyss-ui.d.ts",
   "files": [
