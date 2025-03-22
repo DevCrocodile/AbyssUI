@@ -1,1 +1,7 @@
 @import "tailwindcss";
+
+
+dialog{
+    margin: auto;
+    border-radius: 0.75rem;
+}
