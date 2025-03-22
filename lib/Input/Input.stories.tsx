@@ -11,6 +11,8 @@ type Story = StoryObj<typeof Input>
 
 export const Default: Story = {
     args: {
-
+        label: "User name",
+        placeholder: "pepe77",
+        errorMessage: "User is required"
     }
 }
