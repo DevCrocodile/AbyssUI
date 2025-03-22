@@ -29,7 +29,7 @@ export function Avatar({ imgSrc, userName = 'unknown', size = 'sm', color = 'blu
         <div className={twMerge(clsx(sizeStyles[size], colors[color], baseStyles))}>
             {imgSrc
                 ? <img src={imgSrc} className="object-contain"></img>
-                : initials
+                : <span>{initials}</span>
             }
         </div>
     )

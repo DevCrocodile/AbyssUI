@@ -15,7 +15,8 @@ export { CardContent } from './Card/CardContent'
 export { CardFooter } from './Card/CardFooter'
 export { Modal } from './Modal/Modal'
 export { Input } from './Input/Input'
-
+export { Avatar } from './Avatar/Avatar'
+export { Table } from './Table/Table'
 // hooks
 export { useModal } from './hooks/useModal'
 export { useField } from './hooks/useField'
