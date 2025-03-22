@@ -14,6 +14,8 @@ export { CardDescription } from './Card/CardDescription'
 export { CardContent } from './Card/CardContent'
 export { CardFooter } from './Card/CardFooter'
 export { Modal } from './Modal/Modal'
+export { Input } from './Input/Input'
 
 // hooks
 export { useModal } from './hooks/useModal'
+export { useField } from './hooks/useField'
